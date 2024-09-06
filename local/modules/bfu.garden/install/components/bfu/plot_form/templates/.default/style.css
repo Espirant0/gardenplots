@@ -1,0 +1,37 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.form-inner{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 300px;
+}
+.edit-form{
+	display: flex;
+	justify-content: center;
+}
+.input{
+	margin-top: 5px;
+}
+label{
+	margin-top: 10px;
+}
+.button{
+	margin-top: 10px;
+}
+.button .is-danger
+{
+	position: relative;
+}
+.selector-container{
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+}
+.delete{
+	background-color: #fc6a6a !important;
+	margin-left: 10px;
+}
+.delete:hover{
+	background-color: red !important;
+}

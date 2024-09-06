@@ -13,7 +13,8 @@ CREATE TABLE IF NOT EXISTS `communications`
 CREATE TABLE IF NOT EXISTS `people`
 (
     `PERSON_ID`   INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
-    `PERSON_NAME` VARCHAR(255)       NOT NULL
+    `PERSON_NAME` VARCHAR(255)       NOT NULL,
+    `PERSON_SURNAME` VARCHAR(255)       NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS `contributions`
@@ -28,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `contributions_by_year`
 (
     `CONTRIBUTION_ID`      INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     `CONTRIBUTOR_ID`       INT                NOT NULL,
-    `CONTRIBUTION_YEAR`    YEAR               NOT NULL,
+    `CONTRIBUTION_YEAR`    INT               NOT NULL,
     `SUM_OF_CONTRIBUTIONS` DECIMAL            NULL
 );
 
@@ -55,13 +56,13 @@ CREATE TABLE IF NOT EXISTS `plot_communication`
     `COMMUNICATION_ID` INT NOT NULL
 );
 
-INSERT INTO people (PERSON_ID, PERSON_NAME)
-VALUES (1, 'Денис Глушков'),
-       (2, 'Алексей Иванов'),
-       (3, 'Артём Сидоров'),
-       (4, 'Андрей Петров'),
-       (5, 'Максим Захаров'),
-       (6, 'Алексей Фёдоров');
+INSERT INTO people (PERSON_ID, PERSON_NAME, PERSON_SURNAME)
+VALUES (1, 'Денис','Глушков'),
+       (2, 'Алексей', 'Иванов'),
+       (3, 'Артём', 'Сидоров'),
+       (4, 'Андрей', 'Петров'),
+       (5, 'Максим', 'Захаров'),
+       (6, 'Алексей', 'Фёдоров');
 
 INSERT INTO communications (COMMUNICATION_ID, COMMUNICATION_NAME)
 VALUES (1, 'Электричество'),

@@ -1,0 +1,18 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+	width: 90%;
+	max-width: 1200px;
+}
+.hover-blocks{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+.plots{
+	display: flex;
+	justify-content: center;
+}

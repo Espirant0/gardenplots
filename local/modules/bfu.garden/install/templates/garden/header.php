@@ -19,69 +19,43 @@
 <?php $APPLICATION->ShowPanel(); ?>
 
 <section class="section">
-	<div class="container">
-		<nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
-			<div class="navbar-brand">
-				<a class="navbar-item has-text-weight-semibold is-size-4 logo" href="/">
-					<span>🔥</span> Projector 365
-				</a>
-
-				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-					<span aria-hidden="true"></span>
-				</a>
-			</div>
-
+	<nav class="breadcrumb is-centered has-bullet-separator" aria-label="breadcrumbs">
+		<ul>
+			<li><a href="/plot_form/" class="navbar-item">
+					Добавить участок
+				</a></li>
+			<li><a href="/plots/" class="navbar-item">
+					Участки
+				</a></li>
+			<li><a href="/contributions/" class="navbar-item">
+					Платежи
+				</a></li>
+			<li><a href="/contributions_by_year/" class="navbar-item">
+					Платежи по годам
+				</a></li>
+			<li><a href="/people/" class="navbar-item">
+					Владельцы и плательщики
+				</a></li>
+		</ul>
+	</nav>
+	<!--<div class="container nav-container">
+		<nav class="navbar" role="navigation" aria-label="main navigation">
 			<div id="navbarBasicExample" class="navbar-menu">
 				<div class="navbar-start">
-					<a class="navbar-item">
-						Home
+					<a href="/" class="navbar-item">
+						Добавить участок
 					</a>
-
-					<a class="navbar-item">
-						Documentation
+					<a href="/plots/" class="navbar-item">
+						Участки
 					</a>
-
-					<div class="navbar-item has-dropdown is-hoverable">
-						<a class="navbar-link">
-							More
-						</a>
-
-						<div class="navbar-dropdown">
-							<a class="navbar-item">
-								About
-							</a>
-							<a class="navbar-item">
-								Jobs
-							</a>
-							<a class="navbar-item">
-								Contact
-							</a>
-							<hr class="navbar-divider">
-							<a class="navbar-item">
-								Report an issue
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="navbar-end">
-					<div class="navbar-item">
-						<div class="buttons">
-							<a class="button is-success">
-								<strong>Sign up</strong>
-							</a>
-							<a class="button is-light">
-								Log in
-							</a>
-						</div>
-					</div>
+					<a href="/contributions/" class="navbar-item">
+						Платежи
+					</a>
+					<a href="/contributions_by_year/" class="navbar-item">
+						Платежи по годам
+					</a>
 				</div>
 			</div>
 		</nav>
-	</div>
-</section>
-
-<section class="section">
+	</div>-->
 	<div class="container">
